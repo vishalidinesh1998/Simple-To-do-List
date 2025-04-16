@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form id="studentForm">
+        <table id="studenttable">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" id="age"></td>
+            </tr>
+            <tr>
+                <td id="gender">Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td><select id="course" required>
+                        <option value="">Select a course</option>
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Java">Java</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button id="save" type="button" onclick="btnsave(event)">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <table id="studenttable" border="2">
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Action</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

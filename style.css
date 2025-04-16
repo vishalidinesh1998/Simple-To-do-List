@@ -1,0 +1,23 @@
+body{
+    background-color: skyblue;
+    width:1200px;
+}
+
+h1{
+   
+    text-align: center;
+}
+#studentform{
+    margin-left: 40%;
+}
+#save{
+    width: 100%;
+    height: 100%;
+    background-color: limegreen;
+    border: solid limegreen;
+}
+#studenttable{
+    margin-left: 39%;
+}
+
+
